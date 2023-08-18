@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+/* if we have a link and going to that section, it will go smoothly  */
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(83, 64, 64);
+}
+
+a, .btn {
+    transition: all 0.5s ease;
+}
+
+nav, .navlist {
+    display: flex;
+
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 16vh;
+}
+
+.navlist {
+    list-style: none;
+    gap: 120px;
+    font-size: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    
+}
+
+.logo {
+    font-size:29px ;
+
+}
+/* when hover on the logo the cursor stay the same  */
+.logo:hover {
+    cursor: default;
+}
+
+.options {
+    display: none;
+}
+
+.options-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.options-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
